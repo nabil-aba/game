@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Puzzle Collection - Nabil Aba</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        background: #1a1a1a;
+        color: white;
+        text-align: center;
+        padding: 20px;
+      }
+      h1 {
+        margin-bottom: 30px;
+      }
+      .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+      }
+      .card {
+        background: #333;
+        border-radius: 10px;
+        padding: 20px;
+        width: 250px;
+        text-decoration: none;
+        color: white;
+        transition: transform 0.2s, background 0.2s;
+        border: 1px solid #444;
+      }
+      .card:hover {
+        transform: translateY(-5px);
+        background: #444;
+        border-color: #007bff;
+      }
+      .card h3 {
+        margin: 0 0 10px 0;
+        color: #61dafb;
+      }
+      .card p {
+        font-size: 0.9em;
+        color: #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>🎮 Puzzle Public Collection</h1>
+    <p>Pilih game atau puzzle di bawah ini:</p>
+
+    <div class="gallery">
+      <a href="./anime-puzzle/" class="card">
+        <h3>🧩 Anime Puzzle</h3>
+        <p>Mainkan puzzle anime interaktif.</p>
+      </a>
+    </div>
+  </body>
+</html>
