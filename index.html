@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Puzzle Hub | Nabil</title>
+    <title>Game Hub | Nabil</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -166,7 +166,7 @@
         border: 2px solid white;
         box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.2);
       }
-      #puzzle-grid {
+      #game-grid {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
         gap: 3rem;
@@ -326,12 +326,12 @@
       <div id="loader" class="loader-container">
         <div class="spinner"></div>
       </div>
-      <div id="puzzle-grid"></div>
+      <div id="game-grid"></div>
     </div>
 
     <script>
       const USER = "nabil-aba";
-      const REPO = "puzzle";
+      const REPO = "game";
       const BG_ITEMS = [
         "✨",
         "🧩",
@@ -403,9 +403,9 @@
           "data:image/svg+xml;base64," +
           btoa(serializer.serializeToString(svg));
         document.head.appendChild(link);
-        const grid = document.getElementById("puzzle-grid");
+        const grid = document.getElementById("game-grid");
         const loader = document.getElementById("loader");
-        const cacheKey = `puzzle_creative_${USER}`;
+        const cacheKey = `game_creative_${USER}`;
 
         try {
           let data = JSON.parse(sessionStorage.getItem(cacheKey));
