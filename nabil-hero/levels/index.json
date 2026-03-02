@@ -1,0 +1,9 @@
+[
+  {
+    "id": "1",
+    "title": "Smells Like Teen Spirit",
+    "artist": "Nirvana",
+    "difficulty": "Medium"
+  },
+  { "id": "2", "title": "Creep", "artist": "Radiohead", "difficulty": "Easy" }
+]
